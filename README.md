@@ -55,6 +55,12 @@ To initialize a shallow clone, which will save even more space, use a command li
 Then to sync up:
 
     repo sync --force-sync -f -j4
+    如果有出错项
+    通过运行
+    make clean
+    然后
+    repo sync --no-clone-bundle
+    删除整个目录来修复它。
 
 Then to build for a device with recovery partition:
 
